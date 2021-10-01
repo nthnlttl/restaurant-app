@@ -1,24 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import Menu from './Menu';
 
 function App() {
+  const [selection, setSelection] = useState('');
+
+  let html;
+    if(selection === 'menu') {
+      html = <Menu />
+    }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div>
+    <header>
+      <h1>ROAD KILL GRILL</h1>
+      <h2>YOU KILL IT, WE GRILL IT!</h2>
+      <button type="button" onClick={() => setSelection('menu')}>MENU</button>
+      <button type="button" onClick={() => setSelection('order')}>BEGIN ORDER</button>
+    </header>
+    
     </div>
+    </>
   );
 }
 
