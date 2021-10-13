@@ -1,23 +1,31 @@
 import './App.css';
 import { useState } from 'react';
-import Menu from './Menu';
+import MenuList from './components/MenuList';
+import Menu from './utilities/menu';
+
+import menu from './utilities/menu';
 
 function App() {
-  const [selection, setSelection] = useState('');
+  const [menuItems, setMenuItems] = useState(menu);
+  const [selection, setSelection] = useState('menu');
+  
 
   let html;
     if(selection === 'menu') {
-      html = <Menu />
+      html = <MenuList menuItems={menu}/>
     }
   return (
     <>
     <div>
-    <header>
+     <header id="header">
       <h1>ROAD KILL GRILL</h1>
       <h2>YOU KILL IT, WE GRILL IT!</h2>
-      <button type="button" onClick={() => setSelection('menu')}>MENU</button>
-      <button type="button" onClick={() => setSelection('order')}>BEGIN ORDER</button>
-    </header>
+     </header>
+
+     
+      {html}
+      <button type="button" id="orderbutton" onClick={() => setSelection('order')}>BEGIN ORDER</button>
+    
     
     </div>
     </>

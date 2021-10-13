@@ -1,37 +1,45 @@
 
-const Menu = [
+const menu = [
         {
             id: 1,
             item: 'Squirrel',
-            cost: 6.99,
+            costCents: 699,
         },{
             id: 2,
             item: 'Rabbit',
-            cost: 7.99,
+            costCents: 799,
         },{
             id: 3, 
             item: 'Possum',
-            cost: 8.99,
+            costCents: 899,
         },{
             id: 4,
             item: 'Deer',
-            cost: 10.99,
+            costCents: 1099,
         },{
             id: 5,
             item: 'Armadillo',
-            cost: 11.99,
+            costCents: 1199,
         },{
             id: 6,
             item: 'Alligator',
-            cost: 12.99,
+            costCents: 1299,
         },{
             id: 7,
             item: 'Coyote',
-            cost: 13.99,
+            costCents: 1399,
+        },{
+            id: 8,
+            item: 'Water',
+            costCents: 99,
+        },{
+            id: 9,
+            item: 'Roadside Beer',
+            costCents: 499,
         }
     ];
 
-    console.log(Menu);
+export default menu;
 
 
 

@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+#header {
+    background-image: url('https://images.squarespace-cdn.com/content/v1/592b1ba76a496328940facfa/1553436798788-1SVBO8FABLEQQCEH9W1W/roadkill_raccoon1.jpg');
+    background-repeat: no-repeat;
+    bacakground-size: cover;
+}
+body {
+    background-color: gray;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    border-style: solid;
+    width: 25%;
+    background-color: yellow;
+}
+
+button {
+    display: inline-block;
+    background-color: red;
+}
+
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,19);
+}
+
+#orderbutton {
+    float: right;
+}
